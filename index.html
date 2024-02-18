@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+</head>
+<body>
+    <script>
+
+        //Welcome Message
+        function displayWelcomeMessage(){
+            let name = prompt("please enter your name")
+            console.log("Welcome "+name)
+        }
+        // displayWelcomeMessage();
+
+        // Quote Generator
+        function generateQuote(){
+            let quotes = ["Old is Gold", "Naike Kar Darya May Daal", "Daal May Kuch Kala Hay", "Ishq Murshid", "Pray 5 times a Day"];
+            let randomNumber = Math.round(Math.random()*(quotes.length-1));
+            console.log(quotes[randomNumber])
+        }
+        // generateQuote();
+
+        // Random Number Generator
+
+        function generateRandomNumber(){
+            let randomNumber = Math.round(Math.random()*100);
+            console.log(randomNumber)
+        }
+        generateRandomNumber();
+
+    </script>
+</body>
+</html>
